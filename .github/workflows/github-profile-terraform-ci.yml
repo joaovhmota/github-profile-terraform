@@ -44,6 +44,12 @@ jobs:
       - name: Init
         run: terraform init -input=false
 
+      - name: Validate
+        run: terraform validate
+
+      - name: Format Check
+        run: terraform fmt -check -recursive
+
       - name: Plan
         run: terraform plan -input=false -no-color -out=tfplan
 
