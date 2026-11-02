@@ -1,5 +1,4 @@
 name: github-profile-terraform-ci
-run-name: "Terraform Plan #${{ github.run_number }}.${{ github.run_attempt }}, ${{ github.event_name }} by ${{ github.actor }}."
 
 on:
   pull_request:
@@ -21,6 +20,7 @@ concurrency:
 
 jobs:
   plan:
+    name: Terraform Plan
     runs-on: ubuntu-latest
     environment: continuous-integration
     defaults:
