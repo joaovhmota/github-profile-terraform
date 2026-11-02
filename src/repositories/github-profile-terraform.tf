@@ -1,7 +1,7 @@
 resource "github_repository" "github_profile_terraform" {
   name               = "github-profile-terraform"
   description        = "Terraform repository for GitHub profile"
-  visibility         = "private"
+  visibility         = "public"
   gitignore_template = "Terraform"
 
   archive_on_destroy = true
