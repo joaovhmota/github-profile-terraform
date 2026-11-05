@@ -1,6 +1,6 @@
-resource "github_repository" "github_profile_terraform" {
-  name               = "github-profile-terraform"
-  description        = "Terraform repository for GitHub profile"
+resource "github_repository" "joaovhmota_terraform" {
+  name               = "joaovhmota-terraform"
+  description        = "Terraform repository for joaovhmota's GitHub profile"
   visibility         = "public"
   gitignore_template = "Terraform"
 
